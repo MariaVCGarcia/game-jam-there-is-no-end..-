@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bg65bwp4gc3a5"]
+
+[ext_resource type="Texture2D" uid="uid://cu5glesidtteb" path="res://icon.svg" id="1_2q6dc"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w7c3h"]
+normal = Vector2(0.99996996, 0.007751705)
+distance = -139.19135
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_w8frs"]
+normal = Vector2(-0.99998385, -0.0056817266)
+distance = -135.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mx8sn"]
+size = Vector2(1124, 121)
+
+[node name="level" type="Node2D" unique_id=281002166]
+
+[node name="worldboreder" type="StaticBody2D" parent="." unique_id=585836784]
+position = Vector2(141, 138)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="worldboreder" unique_id=180771449]
+position = Vector2(3, 300)
+shape = SubResource("WorldBoundaryShape2D_w7c3h")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="worldboreder" unique_id=2052977419]
+position = Vector2(866, 317)
+shape = SubResource("WorldBoundaryShape2D_w8frs")
+
+[node name="ground" type="StaticBody2D" parent="." unique_id=584489307]
+position = Vector2(558, 586)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="ground" unique_id=1143014028]
+position = Vector2(17.5, 0)
+scale = Vector2(8.8515625, 1)
+texture = ExtResource("1_2q6dc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ground" unique_id=1500721681]
+position = Vector2(10, -0.5)
+shape = SubResource("RectangleShape2D_mx8sn")
