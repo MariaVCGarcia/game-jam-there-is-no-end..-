@@ -11,7 +11,10 @@ normal = Vector2(-0.99998385, -0.0056817266)
 distance = -135.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mx8sn"]
-size = Vector2(1124, 121)
+size = Vector2(1898, 45)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2q6dc"]
+size = Vector2(346, 39)
 
 [node name="level" type="Node2D" unique_id=281002166]
 
@@ -19,22 +22,35 @@ size = Vector2(1124, 121)
 position = Vector2(141, 138)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="worldboreder" unique_id=180771449]
-position = Vector2(3, 300)
+position = Vector2(10, 813)
 shape = SubResource("WorldBoundaryShape2D_w7c3h")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="worldboreder" unique_id=2052977419]
-position = Vector2(866, 317)
+position = Vector2(1641, 848)
 shape = SubResource("WorldBoundaryShape2D_w8frs")
 
 [node name="ground" type="StaticBody2D" parent="." unique_id=584489307]
-position = Vector2(558, 586)
+position = Vector2(750, 1020)
 metadata/_edit_group_ = true
 
 [node name="Sprite2D" type="Sprite2D" parent="ground" unique_id=1143014028]
-position = Vector2(17.5, 0)
-scale = Vector2(8.8515625, 1)
+position = Vector2(210.49988, 39.5)
+scale = Vector2(14.679686, 0.3828125)
 texture = ExtResource("1_2q6dc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground" unique_id=1500721681]
-position = Vector2(10, -0.5)
+position = Vector2(210, 37.5)
 shape = SubResource("RectangleShape2D_mx8sn")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=2233090]
+position = Vector2(1056, 645)
+metadata/_edit_group_ = true
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=1353736708]
+position = Vector2(174, 261)
+scale = Vector2(2.546875, 0.25)
+texture = ExtResource("1_2q6dc")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1883367972]
+position = Vector2(184, 259)
+shape = SubResource("RectangleShape2D_2q6dc")
