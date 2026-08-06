@@ -5,14 +5,18 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r5oxh"]
 size = Vector2(152, 63)
 
-[node name="Area2D" type="Area2D" unique_id=886311716]
-script = ExtResource("1_ik3nm")
+[node name="Node2D" type="Node2D" unique_id=728587862]
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1160540088]
-position = Vector2(75, 0)
+[node name="Area2D" type="Area2D" parent="." unique_id=886311716]
+position = Vector2(73, 32)
+script = ExtResource("1_ik3nm")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1160540088]
+position = Vector2(0, 2)
 shape = SubResource("RectangleShape2D_r5oxh")
 
-[node name="spwan" type="Marker2D" parent="." unique_id=90680292]
+[node name="spwan" type="Marker2D" parent="Area2D" unique_id=90680292]
 position = Vector2(76, 0)
 
-[connection signal="body_entered" from="." to="." method="_on_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_body_entered"]

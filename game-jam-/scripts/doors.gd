@@ -1,10 +1,7 @@
 class_name Door  extends Area2D
 
-@export var destination_level_tag: String
-@export var destitantion_door_tag: String
-@export var spawn_direction = "up"
-@onready var spawn = $spwan
-
-func _on_body_entered(body: CharacterBody2D) -> void:
+#trying to get the level transitions to wokr but the area is not registering the player.
+#will work on this tomorrow.
+func _on_body_entered(body) -> void:
 	if body == Player:
-		LevelTransition.got_to_level(destination_level_tag,destitantion_door_tag)
+		print("enterd")
