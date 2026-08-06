@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://cniljejskfdtj"]
+
+[ext_resource type="Script" uid="uid://ccnpikch63gxq" path="res://scripts/doors.gd" id="1_ik3nm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r5oxh"]
+size = Vector2(152, 20)
+
+[node name="Area2D" type="Area2D" unique_id=886311716]
+script = ExtResource("1_ik3nm")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1160540088]
+position = Vector2(75, 0)
+shape = SubResource("RectangleShape2D_r5oxh")
+
+[node name="spwan" type="Marker2D" parent="." unique_id=90680292]
+position = Vector2(76, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
