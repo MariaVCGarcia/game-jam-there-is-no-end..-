@@ -23,3 +23,11 @@ tile_set = SubResource("TileSet_w8frs")
 position = Vector2(485, 16)
 destination_level_tag = "level_2"
 destitantion_door_tag = "N"
+
+[node name="CollisionShape2D" parent="door" index="0" unique_id=1160540088]
+position = Vector2(75, 19.5)
+
+[node name="spwan" parent="door" index="1" unique_id=90680292]
+position = Vector2(75, 26)
+
+[editable path="door"]

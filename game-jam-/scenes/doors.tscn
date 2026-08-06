@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://ccnpikch63gxq" path="res://scripts/doors.gd" id="1_ik3nm"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r5oxh"]
-size = Vector2(152, 20)
+size = Vector2(152, 63)
 
 [node name="Area2D" type="Area2D" unique_id=886311716]
 script = ExtResource("1_ik3nm")

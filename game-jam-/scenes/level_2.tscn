@@ -23,3 +23,8 @@ tile_set = SubResource("TileSet_b4j7a")
 position = Vector2(13, 348)
 destination_level_tag = "level_1"
 destitantion_door_tag = "S"
+
+[node name="spwan" parent="door" index="1" unique_id=90680292]
+position = Vector2(76, -28)
+
+[editable path="door"]
