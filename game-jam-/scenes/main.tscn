@@ -7,9 +7,9 @@
 [node name="main" type="Node2D" unique_id=2049899506]
 
 [node name="player" parent="." unique_id=1302487769 instance=ExtResource("2_0wfyh")]
-position = Vector2(75, 317)
+position = Vector2(75, 340)
 
 [node name="level" parent="." unique_id=281002166 instance=ExtResource("1_0wfyh")]
-position = Vector2(3, -119)
+position = Vector2(1, 5)
 
 [node name="UI" parent="." unique_id=1014955267 instance=ExtResource("3_sugp2")]

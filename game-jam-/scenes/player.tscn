@@ -1,26 +1,19 @@
 [gd_scene format=3 uid="uid://bpflyu5t63yie"]
 
 [ext_resource type="Script" uid="uid://cwvu7g3edpbaw" path="res://scripts/character_movement.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://cu5glesidtteb" path="res://icon.svg" id="2_qhqgy"]
+[ext_resource type="Texture2D" uid="uid://bn0pbn05n4pxe" path="res://assets/bean 16x16.png" id="2_g2els"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dqkch"]
-radius = 48.0
-height = 138.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
+radius = 6.0
 
 [node name="player" type="Node2D" unique_id=1302487769]
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=309687434]
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=539356663]
 script = ExtResource("1_g2els")
 
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1919883759]
-position = Vector2(-1, -65)
-texture = ExtResource("2_qhqgy")
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1599204137]
+texture = ExtResource("2_g2els")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=439202127]
-position = Vector2(0, -70)
-shape = SubResource("CapsuleShape2D_dqkch")
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1521695340]
-process_callback = 0
-limit_left = -10000017
-limit_smoothed = true
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1561535230]
+position = Vector2(0, -12)
+shape = SubResource("CapsuleShape2D_3vyb7")
