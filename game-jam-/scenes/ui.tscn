@@ -1,9 +1,24 @@
 [gd_scene format=3 uid="uid://cl251aavy6tbg"]
 
+[ext_resource type="Script" uid="uid://d8wjnkcofds4" path="res://scripts/button.gd" id="1_nt7q6"]
+
 [node name="UI" type="Control" unique_id=1014955267]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = -1.0
+offset_bottom = -3.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="Button" type="Button" parent="." unique_id=1315490003]
+layout_mode = 0
+offset_left = 239.0
+offset_top = 146.0
+offset_right = 382.0
+offset_bottom = 193.0
+text = "start "
+script = ExtResource("1_nt7q6")

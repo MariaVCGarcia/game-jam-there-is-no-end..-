@@ -1,7 +1,9 @@
-class_name Door  extends Area2D
+extends Node2D
 
-#trying to get the level transitions to wokr but the area is not registering the player.
-#will work on this tomorrow.
-func _on_body_entered(body) -> void:
-	if body == Player:
-		print("enterd")
+
+# Called when the node enters the scene tree for the first time.
+
+
+func _on_area_2d_body_entered(body: Node2D) -> void:
+	if body is Player:
+		get_tree().change_scene_to_file("res://scenes/level_2.tscn")
