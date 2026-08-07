@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://brnufakgpl74q" path="res://assets/16x16.png" id="1_bswci"]
 [ext_resource type="PackedScene" uid="uid://cniljejskfdtj" path="res://scenes/doors.tscn" id="2_rus8k"]
+[ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_rus8k"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_w7c3h"]
 texture = ExtResource("1_bswci")
@@ -21,5 +22,8 @@ tile_set = SubResource("TileSet_w8frs")
 
 [node name="Node2D" parent="." unique_id=728587862 instance=ExtResource("2_rus8k")]
 position = Vector2(584, 87)
+
+[node name="player" parent="." unique_id=1302487769 instance=ExtResource("3_rus8k")]
+position = Vector2(76, 325)
 
 [editable path="Node2D"]

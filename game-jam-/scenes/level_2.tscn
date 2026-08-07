@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://brnufakgpl74q" path="res://assets/16x16.png" id="1_jm1iu"]
 [ext_resource type="PackedScene" uid="uid://cniljejskfdtj" path="res://scenes/doors.tscn" id="2_pbc48"]
+[ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_pbc48"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_eqxsl"]
 texture = ExtResource("1_jm1iu")
@@ -24,5 +25,8 @@ position = Vector2(13, 348)
 
 [node name="Area2D" parent="door" index="0" unique_id=886311716]
 position = Vector2(607, -229)
+
+[node name="player" parent="." unique_id=1302487769 instance=ExtResource("3_pbc48")]
+position = Vector2(77, 324)
 
 [editable path="door"]
