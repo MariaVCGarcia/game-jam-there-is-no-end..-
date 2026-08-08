@@ -1,11 +1,21 @@
 extends Node
 
+const scene_level = preload("res://scenes/level_1.tscn")
+const scene_level2 = preload("res://scenes/level_2.tscn")
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
+var spwan_door_tag 
+# level transition contorler 
+func level_transitions(level_tag, destination_tag):
+	var scene_to_load 
+	match level_tag:
+		"level_1":
+			scene_to_load = scene_level
+		"level_2":
+			scene_to_load = scene_level2
+			if scene_to_load !=null:
+				spwan_door_tag = destination_tag
+				get_tree().change_scene_to_packed(scene_to_load)
+			
 	pass
+	
+	

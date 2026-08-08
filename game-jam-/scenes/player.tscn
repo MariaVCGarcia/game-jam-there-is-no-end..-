@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://bpflyu5t63yie"]
 
 [ext_resource type="Script" uid="uid://cwvu7g3edpbaw" path="res://scripts/character_movement.gd" id="1_g2els"]
-[ext_resource type="Texture2D" uid="uid://bn0pbn05n4pxe" path="res://assets/bean 16x16.png" id="2_g2els"]
+[ext_resource type="Texture2D" uid="uid://yc0u80r6xrpf" path="res://assets/viral1.png" id="2_g2els"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3vyb7"]
-radius = 13.0
-height = 26.0
+radius = 9.0
+height = 78.0
 
 [node name="player" type="Node2D" unique_id=1302487769]
 
@@ -18,7 +18,7 @@ scale = Vector2(1.1875, 1.125)
 texture = ExtResource("2_g2els")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1561535230]
-position = Vector2(0, -13)
+position = Vector2(1, -11)
 shape = SubResource("CapsuleShape2D_3vyb7")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=261506625]
