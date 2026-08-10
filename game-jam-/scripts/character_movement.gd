@@ -60,7 +60,7 @@ func handle_short_jump():
 		velocity.y -= JUMP_SPEED *.3
 		
 func handle_dubble_jump():
-	if Input.is_action_just_pressed("dubble_jump") and not is_on_floor() and can_dubble_jump:
+	if Input.is_action_just_pressed("up ") and not is_on_floor() and can_dubble_jump:
 		velocity.y = JUMP_SPEED
 		can_dubble_jump = false 
 
