@@ -102,6 +102,6 @@ spawn_direction = "left "
 position = Vector2(1272, -213)
 
 [node name="player" parent="." unique_id=1302487769 instance=ExtResource("3_ah8om")]
-position = Vector2(762, 188)
+position = Vector2(78, 218)
 
 [editable path="door"]
