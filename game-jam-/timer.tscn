@@ -1,5 +1,9 @@
 [gd_scene format=3 uid="uid://qpe5x7aluwl2"]
 
+[ext_resource type="Script" uid="uid://b6cy3i2rkart0" path="res://timer.gd" id="1_qdhxh"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_qdhxh"]
+
 [node name="timer" type="Control" unique_id=1954631100]
 layout_mode = 3
 anchors_preset = 15
@@ -7,3 +11,30 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_qdhxh")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=65848292]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -62.5
+offset_right = 62.5
+offset_bottom = 40.0
+grow_horizontal = 2
+color = Color(0.00069389754, 0.00069389766, 0.0006938976, 1)
+
+[node name="Label" type="Label" parent="." unique_id=180373991]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -103.0
+offset_top = 3.0
+offset_right = 113.0
+offset_bottom = 42.0
+grow_horizontal = 2
+theme_override_font_sizes/font_size = 35
+text = "00:00:00"
+label_settings = SubResource("LabelSettings_qdhxh")
+horizontal_alignment = 1
