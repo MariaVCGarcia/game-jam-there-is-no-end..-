@@ -12,7 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://csdso2xon00im" path="res://assets/playeranimations/image (3).png" id="5_smehm"]
 [ext_resource type="Texture2D" uid="uid://b0dks5pq60bjh" path="res://assets/playeranimations/Moving jump5.png" id="6_a8ls1"]
 [ext_resource type="Texture2D" uid="uid://mj75mm3kxvaa" path="res://assets/playeranimations/Moving jump6.png" id="7_qfm1y"]
-[ext_resource type="PackedScene" uid="uid://qpe5x7aluwl2" path="res://timer.tscn" id="13_jej6c"]
+[ext_resource type="PackedScene" uid="uid://qpe5x7aluwl2" path="res://scenes/timer.tscn" id="13_jej6c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ur7pv"]
 animations = [{
