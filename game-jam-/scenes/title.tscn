@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://dxxl5tejq26a"]
+
+[ext_resource type="Script" uid="uid://m6h6bw138sxv" path="res://scripts/title.gd" id="1_wosw1"]
+[ext_resource type="Texture2D" uid="uid://bx7ns6shcquud" path="res://assets/title/gameTitle.png" id="2_wosw1"]
+
+[node name="title" type="Control" unique_id=648916463]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_wosw1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1620288323]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_right = 1280.0
+offset_bottom = 720.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_wosw1")
+expand_mode = 1
+
+[node name="start" type="Button" parent="." unique_id=816477590]
+layout_mode = 0
+offset_left = 591.0
+offset_top = 295.0
+offset_right = 1159.0
+offset_bottom = 461.0
+mouse_default_cursor_shape = 2
+flat = true
+
+[connection signal="pressed" from="start" to="." method="_on_start_pressed"]
