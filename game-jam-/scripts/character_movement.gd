@@ -28,10 +28,13 @@ func _physics_process(delta: float) -> void:
 	handle_move(Input_vector,delta)
 	#wall kick
 	hadle_wall_kick()
-	if Input_vector.x:
+	if Input_vector.x > 0:
 		animated_sprite.play("run")
+	elif Input_vector.x < 0:
+		animated_sprite.play("run_left")
 	else:
 		animated_sprite.stop()
+		
 	if Input.is_action_just_pressed("up "):
 		animated_sprite.play("jump")
 	move_and_slide()
