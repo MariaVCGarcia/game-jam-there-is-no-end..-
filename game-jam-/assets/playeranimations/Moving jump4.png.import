@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yc0u80r6xrpf"
-path="res://.godot/imported/viral1.png-25a395add331053568b76b5f6b9da62d.ctex"
+uid="uid://blxaqjtx2aeke"
+path="res://.godot/imported/Moving jump4.png-465d6451a6fd747eb381ad4dc9cd807a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/viral1.png"
-dest_files=["res://.godot/imported/viral1.png-25a395add331053568b76b5f6b9da62d.ctex"]
+source_file="res://assets/playeranimations/Moving jump4.png"
+dest_files=["res://.godot/imported/Moving jump4.png-465d6451a6fd747eb381ad4dc9cd807a.ctex"]
 
 [params]
 

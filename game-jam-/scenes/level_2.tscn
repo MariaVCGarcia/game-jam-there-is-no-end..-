@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://kycc2rtc8iwq"]
 
-[ext_resource type="Texture2D" uid="uid://dl7kss07iugso" path="res://assets/single tile platform.png" id="1_eqxsl"]
-[ext_resource type="Texture2D" uid="uid://cq12fic0qdr2e" path="res://assets/tilesheet1.png" id="1_pbc48"]
+[ext_resource type="Texture2D" uid="uid://dl7kss07iugso" path="res://assets/tileset/single tile platform.png" id="1_eqxsl"]
+[ext_resource type="Texture2D" uid="uid://cq12fic0qdr2e" path="res://assets/tileset/tilesheet1.png" id="1_pbc48"]
 [ext_resource type="PackedScene" uid="uid://cniljejskfdtj" path="res://scenes/doors.tscn" id="2_pbc48"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_pbc48"]
 
@@ -99,13 +99,13 @@ tile_set = SubResource("TileSet_y0kc7")
 position = Vector2(13, 348)
 destination_level_tag = "level_3"
 destination_door_tag = "W"
-spawn_direction = "N"
+spawn_direction = "left "
 
 [node name="Area2D" parent="door" index="0" unique_id=886311716]
 position = Vector2(1272, -213)
 
 [node name="player" parent="." unique_id=1302487769 instance=ExtResource("3_pbc48")]
-position = Vector2(1007, 244)
+position = Vector2(106, 372)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=953892495]
 environment = SubResource("Environment_pbc48")

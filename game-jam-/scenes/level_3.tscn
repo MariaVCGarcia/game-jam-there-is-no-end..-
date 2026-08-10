@@ -1,7 +1,7 @@
 [gd_scene format=4 uid="uid://d3b46422lhqxe"]
 
-[ext_resource type="Texture2D" uid="uid://dl7kss07iugso" path="res://assets/single tile platform.png" id="1_1pn4d"]
-[ext_resource type="Texture2D" uid="uid://cq12fic0qdr2e" path="res://assets/tilesheet1.png" id="1_uwxec"]
+[ext_resource type="Texture2D" uid="uid://dl7kss07iugso" path="res://assets/tileset/single tile platform.png" id="1_1pn4d"]
+[ext_resource type="Texture2D" uid="uid://cq12fic0qdr2e" path="res://assets/tileset/tilesheet1.png" id="1_uwxec"]
 [ext_resource type="PackedScene" uid="uid://cniljejskfdtj" path="res://scenes/doors.tscn" id="2_1pn4d"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_ah8om"]
 
@@ -102,7 +102,7 @@ position = Vector2(13, 348)
 position = Vector2(1272, -213)
 
 [node name="player" parent="." unique_id=1302487769 instance=ExtResource("3_ah8om")]
-position = Vector2(1178, 150)
+position = Vector2(63, 573)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=953892495]
 environment = SubResource("Environment_pbc48")

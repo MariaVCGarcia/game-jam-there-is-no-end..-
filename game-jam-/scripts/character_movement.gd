@@ -1,9 +1,10 @@
 class_name Player extends CharacterBody2D
  
+@onready var animated_sprite = $AnimatedSprite2D
 var WALK_SPEED = 400.0
 var  JUMP_SPEED = -400.0
-var decceleration = 400
-var acceleration = 400
+var decceleration = 800
+var acceleration = 600
 var can_wall_jump: bool = true
 
 func _physics_process(delta: float) -> void:
@@ -21,6 +22,10 @@ func _physics_process(delta: float) -> void:
 	var Input_vector: Vector2 = Vector2.ZERO 
 	Input_vector.x = Input.get_axis("left ", "right ")
 	handle_move(Input_vector,delta)
+	if Input_vector.x:
+		animated_sprite.play("run")
+	else:
+		animated_sprite.stop()
 	#wall kick
 	hadle_wall_kick()
 	move_and_slide()
@@ -32,6 +37,7 @@ func Handle_gravity(delta):
 func handle_jump():
 	if Input.is_action_just_pressed("up ") and is_on_floor():
 		velocity.y = JUMP_SPEED
+		
 
 func handle_move(Input_vector: Vector2, delta: float)->void:
 	if Input_vector.x !=0:
@@ -46,10 +52,11 @@ func handle_move(Input_vector: Vector2, delta: float)->void:
 func handle_short_jump():
 	if Input.is_action_just_released("up ") and not is_on_floor():
 		velocity.y -= JUMP_SPEED *.3
-
+		
 func handle_dubble_jump():
 	if Input.is_action_just_pressed("dubble_jump") and not is_on_floor():
 		velocity.y = JUMP_SPEED
+
 
 func handle_fast_fall():
 	if Input.is_action_pressed("down") and not is_on_floor():

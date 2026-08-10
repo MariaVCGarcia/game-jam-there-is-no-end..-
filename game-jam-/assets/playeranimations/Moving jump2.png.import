@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cq12fic0qdr2e"
-path="res://.godot/imported/tilesheet1.png-d0b1b78ce973d0d2c70be2d0b244ef68.ctex"
+uid="uid://c3il6amxriccb"
+path="res://.godot/imported/Moving jump2.png-ee35ce0440b75926e455bed7a0f2e98a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/tilesheet1.png"
-dest_files=["res://.godot/imported/tilesheet1.png-d0b1b78ce973d0d2c70be2d0b244ef68.ctex"]
+source_file="res://assets/playeranimations/Moving jump2.png"
+dest_files=["res://.godot/imported/Moving jump2.png-ee35ce0440b75926e455bed7a0f2e98a.ctex"]
 
 [params]
 

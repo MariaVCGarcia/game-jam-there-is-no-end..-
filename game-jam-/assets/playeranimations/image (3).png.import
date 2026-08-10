@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl7kss07iugso"
-path="res://.godot/imported/single tile platform.png-125f803bba2bae9777f2f2fc6b2e4946.ctex"
+uid="uid://csdso2xon00im"
+path="res://.godot/imported/image (3).png-1df08064dfec117e9c3db2ab617e336b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/single tile platform.png"
-dest_files=["res://.godot/imported/single tile platform.png-125f803bba2bae9777f2f2fc6b2e4946.ctex"]
+source_file="res://assets/playeranimations/image (3).png"
+dest_files=["res://.godot/imported/image (3).png-1df08064dfec117e9c3db2ab617e336b.ctex"]
 
 [params]
 
