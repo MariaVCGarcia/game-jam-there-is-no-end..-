@@ -85,9 +85,6 @@ physics_layer_0/physics_material = SubResource("PhysicsMaterial_rus8k")
 sources/1 = SubResource("TileSetAtlasSource_wo48x")
 sources/0 = SubResource("TileSetAtlasSource_b4j7a")
 
-[sub_resource type="Environment" id="Environment_pbc48"]
-background_mode = 3
-
 [node name="Level_2" type="Node2D" unique_id=526227515]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1203904937]
@@ -106,10 +103,5 @@ position = Vector2(1272, -213)
 
 [node name="player" parent="." unique_id=1302487769 instance=ExtResource("3_pbc48")]
 position = Vector2(106, 372)
-
-[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=953892495]
-environment = SubResource("Environment_pbc48")
-
-[node name="CanvasModulate" type="CanvasModulate" parent="." unique_id=1817641502]
 
 [editable path="door"]

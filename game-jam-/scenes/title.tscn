@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dxxl5tejq26a"]
 
-[ext_resource type="Script" uid="uid://m6h6bw138sxv" path="res://scripts/title.gd" id="1_wosw1"]
+[ext_resource type="Script" path="res://scripts/title.gd" id="1_wosw1"]
 [ext_resource type="Texture2D" uid="uid://bx7ns6shcquud" path="res://assets/title/gameTitle.png" id="2_wosw1"]
 
 [node name="title" type="Control" unique_id=648916463]
