@@ -77,3 +77,4 @@ func hadle_wall_kick():
 			can_wall_jump = false 
 			velocity.x = wall_normal.x * acceleration
 			velocity.y = JUMP_SPEED * 1.1
+			can_dubble_jump = true 
