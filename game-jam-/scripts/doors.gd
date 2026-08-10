@@ -8,4 +8,6 @@ extends Node2D
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body is Player:
+		print("enterd")
 		Global.level_transitions(destination_level_tag,destination_door_tag)
+		print("worked")

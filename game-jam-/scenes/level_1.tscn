@@ -1,12 +1,23 @@
 [gd_scene format=4 uid="uid://dgysq5ppw1es0"]
 
+[ext_resource type="Texture2D" uid="uid://dl7kss07iugso" path="res://assets/single tile platform.png" id="1_5xbjy"]
 [ext_resource type="Texture2D" uid="uid://cq12fic0qdr2e" path="res://assets/tilesheet1.png" id="1_rus8k"]
 [ext_resource type="PackedScene" uid="uid://cniljejskfdtj" path="res://scenes/doors.tscn" id="2_rus8k"]
 [ext_resource type="PackedScene" uid="uid://bpflyu5t63yie" path="res://scenes/player.tscn" id="3_rus8k"]
 
-[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_rus8k"]
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_5xbjy"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_5xbjy"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4nkto"]
+texture = ExtResource("1_5xbjy")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+2:0/0 = 0
+4:0/0 = 0
+1:1/0 = 0
+3:1/0 = 0
+5:1/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fcfvj"]
 texture = ExtResource("1_rus8k")
 texture_region_size = Vector2i(32, 32)
 3:0/0 = 0
@@ -70,8 +81,9 @@ texture_region_size = Vector2i(32, 32)
 [sub_resource type="TileSet" id="TileSet_w8frs"]
 tile_size = Vector2i(32, 32)
 physics_layer_0/collision_layer = 1
-physics_layer_0/physics_material = SubResource("PhysicsMaterial_rus8k")
-sources/1 = SubResource("TileSetAtlasSource_5xbjy")
+physics_layer_0/physics_material = SubResource("PhysicsMaterial_5xbjy")
+sources/1 = SubResource("TileSetAtlasSource_fcfvj")
+sources/0 = SubResource("TileSetAtlasSource_4nkto")
 
 [sub_resource type="Environment" id="Environment_rus8k"]
 background_mode = 3
@@ -93,7 +105,7 @@ spawn_direction = "left "
 position = Vector2(701, 54)
 
 [node name="player" parent="." unique_id=1302487769 instance=ExtResource("3_rus8k")]
-position = Vector2(1214, 142)
+position = Vector2(1190, 136)
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1862160174]
 environment = SubResource("Environment_rus8k")
