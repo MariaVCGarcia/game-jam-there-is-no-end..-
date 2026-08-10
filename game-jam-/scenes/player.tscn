@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://csdso2xon00im" path="res://assets/playeranimations/image (3).png" id="5_smehm"]
 [ext_resource type="Texture2D" uid="uid://b0dks5pq60bjh" path="res://assets/playeranimations/Moving jump5.png" id="6_a8ls1"]
 [ext_resource type="Texture2D" uid="uid://mj75mm3kxvaa" path="res://assets/playeranimations/Moving jump6.png" id="7_qfm1y"]
+[ext_resource type="PackedScene" uid="uid://qpe5x7aluwl2" path="res://scenes/timer.tscn" id="13_jej6c"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ur7pv"]
 animations = [{
@@ -72,11 +73,15 @@ script = ExtResource("1_g2els")
 position = Vector2(1, -34)
 sprite_frames = SubResource("SpriteFrames_ur7pv")
 animation = &"jump"
-frame = 2
-frame_progress = 0.3174322
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1561535230]
 position = Vector2(2, -39)
 shape = SubResource("CapsuleShape2D_3vyb7")
 
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=261506625]
+
+[node name="timer" parent="Player/Camera2D" unique_id=1954631100 instance=ExtResource("13_jej6c")]
+offset_left = 4.0
+offset_top = -119.0
+offset_right = 4.0
+offset_bottom = -119.0

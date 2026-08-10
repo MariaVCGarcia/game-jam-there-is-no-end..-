@@ -22,12 +22,14 @@ func _physics_process(delta: float) -> void:
 	var Input_vector: Vector2 = Vector2.ZERO 
 	Input_vector.x = Input.get_axis("left ", "right ")
 	handle_move(Input_vector,delta)
+	#wall kick
+	hadle_wall_kick()
 	if Input_vector.x:
 		animated_sprite.play("run")
 	else:
 		animated_sprite.stop()
-	#wall kick
-	hadle_wall_kick()
+	if Input.is_action_just_pressed("up "):
+		animated_sprite.play("jump")
 	move_and_slide()
 
 func Handle_gravity(delta):
