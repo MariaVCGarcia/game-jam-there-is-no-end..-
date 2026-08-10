@@ -105,7 +105,7 @@ shape = SubResource("CapsuleShape2D_3vyb7")
 [node name="Camera2D" type="Camera2D" parent="Player" unique_id=261506625]
 
 [node name="timer" parent="Player/Camera2D" unique_id=1954631100 instance=ExtResource("13_jej6c")]
-offset_left = 4.0
-offset_top = -119.0
-offset_right = 4.0
-offset_bottom = -119.0
+offset_left = -577.0
+offset_top = -360.0
+offset_right = -577.0
+offset_bottom = -360.0
