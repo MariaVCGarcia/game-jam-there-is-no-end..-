@@ -6,8 +6,12 @@ var  JUMP_SPEED = -400.0
 var decceleration = 800
 var acceleration = 600
 var can_wall_jump: bool = true
+var can_dubble_jump: bool = true 
 
 func _physics_process(delta: float) -> void:
+	if is_on_floor():
+		can_dubble_jump = true
+
 	Handle_gravity(delta)
 	# Handle jump 
 	handle_jump()
@@ -56,8 +60,9 @@ func handle_short_jump():
 		velocity.y -= JUMP_SPEED *.3
 		
 func handle_dubble_jump():
-	if Input.is_action_just_pressed("dubble_jump") and not is_on_floor():
+	if Input.is_action_just_pressed("dubble_jump") and not is_on_floor() and can_dubble_jump:
 		velocity.y = JUMP_SPEED
+		can_dubble_jump = false 
 
 
 func handle_fast_fall():
@@ -65,6 +70,7 @@ func handle_fast_fall():
 		velocity.y -= JUMP_SPEED *.1
 
 func hadle_wall_kick():
+	
 	if can_wall_jump and Input.is_action_just_pressed("up ") and is_on_wall_only():
 		var wall_normal: Vector2 = get_wall_normal()
 		if wall_normal:
