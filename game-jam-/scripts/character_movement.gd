@@ -3,7 +3,7 @@ class_name Player extends CharacterBody2D
 @onready var animated_sprite = $AnimatedSprite2D
 var WALK_SPEED = 400.0
 var  JUMP_SPEED = -400.0
-var decceleration = 800
+var decceleration = 1100
 var acceleration = 600
 var can_wall_jump: bool = true
 
@@ -67,5 +67,5 @@ func hadle_wall_kick():
 		var wall_normal: Vector2 = get_wall_normal()
 		if wall_normal:
 			can_wall_jump = false 
-			velocity.x = wall_normal.x * acceleration
+			velocity.x = wall_normal.x * (acceleration * .5)
 			velocity.y = JUMP_SPEED * 1.1
